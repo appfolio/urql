@@ -611,16 +611,16 @@ export const persistData = () => {
   if (currentData!.storage) {
     currentOptimistic = true;
     currentOperation = 'read';
-    const entries: SerializedEntries = {};
+    const entries: SerializedEntries = new Map();
     for (const key of currentData!.persist.keys()) {
       const { entityKey, fieldKey } = deserializeKeyInfo(key);
       let x: void | Link | EntityField;
       if ((x = readLink(entityKey, fieldKey)) !== undefined) {
-        entries[key] = `:${stringifyVariables(x)}`;
+        entries.set(key, `:${stringifyVariables(x)}`);
       } else if ((x = readRecord(entityKey, fieldKey)) !== undefined) {
-        entries[key] = stringifyVariables(x);
+        entries.set(key, stringifyVariables(x));
       } else {
-        entries[key] = undefined;
+        entries.set(key, undefined);
       }
     }
 
@@ -637,8 +637,7 @@ export const hydrateData = (
 ) => {
   initDataState('write', data, null);
 
-  for (const key in entries) {
-    const value = entries[key];
+  for (const [key, value] of entries) {
     if (value !== undefined) {
       const { entityKey, fieldKey } = deserializeKeyInfo(key);
       if (value[0] === ':') {
