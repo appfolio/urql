@@ -1,5 +1,12 @@
 # @urql/exchange-graphcache
 
+## 7.0.0
+
+### Major Changes
+
+- Use Map over plain JS object in StorageAdapter. Any custom StorageAdapter will have to update to
+  support `readData` and `writeData` as a Map. (See https://github.com/appfolio/urql/pull/1)
+
 ## 6.3.3
 
 ### Patch Changes
