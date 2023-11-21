@@ -1,15 +1,15 @@
 {
-  "name": "@urql/exchange-graphcache",
+  "name": "@appfolio/exchange-graphcache",
   "version": "6.3.3",
   "description": "A normalized and configurable cache exchange for urql",
   "sideEffects": false,
   "homepage": "https://formidable.com/open-source/urql/docs/graphcache",
-  "bugs": "https://github.com/urql-graphql/urql/issues",
+  "bugs": "https://github.com/appfolio/urql/issues",
   "license": "MIT",
   "author": "urql GraphQL Contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/urql-graphql/urql.git",
+    "url": "https://github.com/appfolio/urql.git",
     "directory": "exchanges/graphcache"
   },
   "keywords": [
