@@ -980,9 +980,7 @@ describe('Store with storage', () => {
     expect(storage.writeData).toHaveBeenCalled();
     const serialisedStore = (storage.writeData as any).mock.calls[0][0];
 
-    expect(serialisedStore).toEqual({
-      'Query.base': 'true',
-    });
+    expect(serialisedStore.get('Query.base')).toEqual('true');
 
     store = new Store();
     InMemoryData.hydrateData(store.data, storage, serialisedStore);

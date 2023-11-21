@@ -930,9 +930,7 @@ export type KeyingConfig = {
 };
 
 /** Serialized normalized caching data. */
-export interface SerializedEntries {
-  [key: string]: string | undefined;
-}
+export type SerializedEntries = Map<string, string | undefined>;
 
 /** A serialized GraphQL request for offline storage. */
 export interface SerializedRequest {
