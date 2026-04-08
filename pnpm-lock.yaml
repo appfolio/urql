@@ -161,8 +161,8 @@ importers:
         specifier: ^5.9.0
         version: 5.9.0(rollup@3.21.1)
       tar:
-        specifier: ^6.1.13
-        version: 6.1.13
+        specifier: ^6.2.1
+        version: 6.2.1
       terser:
         specifier: ^5.17.1
         version: 5.17.1
@@ -6543,6 +6543,10 @@ packages:
     resolution: {integrity: sha512-+yQl7SX3bIT83Lhb4BVorMAHVuqsskxRdlmO9kTpyukp8vsm2Sn/fUOV9xlnG8/a5JsypJzap21lz/y3FBMJ8Q==}
     engines: {node: '>=8'}
 
+  minipass@5.0.0:
+    resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==}
+    engines: {node: '>=8'}
+
   minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
     engines: {node: '>= 8'}
@@ -8804,8 +8808,8 @@ packages:
     resolution: {integrity: sha512-ujeqbceABgwMZxEJnk2HDY2DlnUZ+9oEcb1KzTVfYHio0UE6dG71n60d8D2I4qNvleWrrXpmjpt7vZeF1LnMZQ==}
     engines: {node: '>=6'}
 
-  tar@6.1.13:
-    resolution: {integrity: sha512-jdIBIN6LTIe2jqzay/2vtYLlBHa3JF42ot3h1dW8Q0PaAG4v8rm0cvpVePtau5C6OKXGGcgO9q2AMNSWxiLqKw==}
+  tar@6.2.1:
+    resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
   tarr@1.1.0:
@@ -13926,7 +13930,7 @@ snapshots:
       promise-inflight: 1.0.1(bluebird@3.7.2)
       rimraf: 3.0.2
       ssri: 9.0.1
-      tar: 6.1.13
+      tar: 6.2.1
       unique-filename: 2.0.1
     transitivePeerDependencies:
       - bluebird
@@ -13944,7 +13948,7 @@ snapshots:
       p-map: 4.0.0
       promise-inflight: 1.0.1(bluebird@3.7.2)
       ssri: 10.0.1
-      tar: 6.1.13
+      tar: 6.2.1
       unique-filename: 3.0.0
     transitivePeerDependencies:
       - bluebird
@@ -17952,6 +17956,8 @@ snapshots:
 
   minipass@4.2.5: {}
 
+  minipass@5.0.0: {}
+
   minizlib@2.1.2:
     dependencies:
       minipass: 3.3.6
@@ -18137,7 +18143,7 @@ snapshots:
       npmlog: 6.0.2
       rimraf: 3.0.2
       semver: 7.5.4
-      tar: 6.1.13
+      tar: 6.2.1
       which: 2.0.2
     transitivePeerDependencies:
       - bluebird
@@ -18572,7 +18578,7 @@ snapshots:
       read-package-json-fast: 3.0.2
       sigstore: 1.1.1
       ssri: 10.0.1
-      tar: 6.1.13
+      tar: 6.2.1
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -20808,11 +20814,11 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 3.6.2
 
-  tar@6.1.13:
+  tar@6.2.1:
     dependencies:
       chownr: 2.0.0
       fs-minipass: 2.1.0
-      minipass: 4.2.5
+      minipass: 5.0.0
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
