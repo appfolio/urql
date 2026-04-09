@@ -21,7 +21,7 @@
     ]
   },
   "dependencies": {
-    "@babel/runtime": "^7.20.1",
+    "@babel/runtime": "^7.26.10",
     "@mdx-js/react": "^1.6.22",
     "formidable-oss-badges": "0.3.5",
     "fuse.js": "^6.4.6",
